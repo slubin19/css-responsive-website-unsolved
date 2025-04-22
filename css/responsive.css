@@ -9,9 +9,136 @@
     display: none;
   } */
 
+
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  .teammate
+  {
+    text-align: flex-start;
+  }
+  .teammate-img-wrapper img {
+    align-items: flex-start;
+  }
 }
 
+
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media(max-width: 1023px)
+{
+  .portfolio-list
+  {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-item
+  {
+    width: 100%;
+    flex-direction: row;
+  }
+  .teammates-list::before, .teammates-list::after
+  {
+    display: none;
+  }
+  .teammate-img-wrapper
+  {
+    width: max-content;
+  }
+  .teammate-info .teammate-role,
+  .teammate-info .teammate-name
+  {
+    width: 100%;
+  }
+  .teammate
+  {
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .teammates-list-wrapper
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .teammate-social-icons
+  {
+    padding: 20px;
+    justify-content: center;
+  }
+  .teammates-list
+  {
+    width: 100%;
+  }
+  .social-icons
+  {
+    width: 30%;
+  }
+  .social-icons span
+  {
+    display: none;
+  }
+  
+}
+
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media(max-width: 767px)
+{
+  .portfolio-item
+  {
+    width: 100%;
+    flex-direction: column;
+  }
+  .teammates-list::before, .teammates-list::after
+  {
+    display: none;
+  }
+  .teammates-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .teammate-img-wrapper
+  {
+    width: max-content;
+  }
+  .teammate-info .teammate-role,
+  .teammate-info .teammate-name
+  {
+    width: 100%;
+  }
+  .teammate
+  {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .teammates-list-wrapper
+  {
+    flex-direction: column;
+  }
+  .teammate-social-icons
+  {
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .teammates-list
+  {
+    width: 100%;
+  }
+  footer .social-icons
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-contacts
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons span
+  {
+    display: block;
+  }
+}
