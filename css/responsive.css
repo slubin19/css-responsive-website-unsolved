@@ -18,12 +18,20 @@
   .teammate-img-wrapper img {
     align-items: flex-start;
   }
+  .trigram
+  {
+    display: none;
+  }
 }
 
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
 @media(max-width: 1023px)
 {
+  .top-navigation ul
+  {
+    display: none;
+  }
   .portfolio-list
   {
     flex-direction: column;
@@ -41,7 +49,7 @@
   }
   .teammate-img-wrapper
   {
-    width: max-content;
+    width: 100%;
   }
   .teammate-info .teammate-role,
   .teammate-info .teammate-name
@@ -50,7 +58,7 @@
   }
   .teammate
   {
-    
+    width: 45%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -108,6 +116,7 @@
   }
   .teammate
   {
+    width: 100%;
     flex-direction: row;
     align-items: center;
     text-align: center;
